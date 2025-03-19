@@ -23,7 +23,7 @@ header {
     display: flex;
     justify-content: center;
     flex-grow: 1;
-    margin-right: 400px;
+    margin-right: 480px;
 }
 
 .header-right ul {
@@ -34,7 +34,7 @@ header {
 }
 
 .header-right ul li {
-    margin-left: 30px;
+    margin-left: 50px;
 }
 
 .header-right ul li a {
@@ -43,20 +43,6 @@ header {
     font-size: 18px;
 }
 
-.slider {
-    position: relative;
-    overflow: hidden;
-}
-
-.slider-images {
-    display: flex;
-    animation: slide 15s infinite;
-}
-
-.slider-img {
-    width: 100%;
-    height: auto;
-}
 
 @keyframes slide {
     0% { transform: translateX(0); }
@@ -70,28 +56,6 @@ header {
     text-align: center;
 }
 
-.social-popup {
-    display: flex;
-    justify-content: flex-end;
-    padding: 20px;
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-}
-
-.popup-icons {
-    display: flex;
-}
-
-.icon {
-    margin-left: 10px;
-}
-
-.icon img {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-}
 
 footer {
     background-color: #333;
@@ -117,4 +81,31 @@ header img{
      height: 50px; /* Set the height of the logo */
         margin-right: 20px; /* Optional: space between logo and header text */
 
+}
+
+/* Home section with full-screen background image */
+.Home {
+  background: url('/Image/Japura.jpg') no-repeat center center/cover; /* Replace with your image */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: rgb(227, 221, 221); /* Text color */
+}
+
+/* Overlay effect for better text visibility */
+.overlay {
+  background: rgba(46, 39, 39, 0.5); /* Dark transparent overlay */
+  padding: 30px;
+  border-radius: 20px;
+}
+
+/* Big text styling */
+.Home  h1 {
+  font-size: 50px; /* Large text */
+  margin-bottom: 20px;
+}
+
+.Home p {
+  font-size: 40px; /* Subtext */
 }
