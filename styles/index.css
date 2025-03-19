@@ -149,4 +149,15 @@ header img {
     justify-content: center;
 }
 
+/* Hidden Paragraph by Default */
+.popup {
+  opacity: 0;
+  transform: translateY(50px); /* Initial position (move down) */
+  transition: opacity 0.8s ease, transform 0.8s ease; /* Smooth animation */
+}
 
+/* Pop-Up Effect When in View */
+.popup.show {
+  opacity: 1; /* Make it visible */
+  transform: translateY(0); /* Move to normal position */
+}
