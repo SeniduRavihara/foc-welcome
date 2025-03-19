@@ -98,7 +98,17 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
-    position: fixed;
+    position:fixed;
     width: 100%;
     bottom: 0;
+}
+
+section{
+    min-height: 100vh; /* Full height of the viewport */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      color: #fff;
 }
