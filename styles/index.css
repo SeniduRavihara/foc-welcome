@@ -1,0 +1,104 @@
+/* Import Montserrat Font */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    color: white;
+}
+
+.header-left .site-name {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.header-right{
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    margin-right: 400px;
+}
+
+.header-right ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.header-right ul li {
+    margin-left: 30px;
+}
+
+.header-right ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.slider-images {
+    display: flex;
+    animation: slide 15s infinite;
+}
+
+.slider-img {
+    width: 100%;
+    height: auto;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    33% { transform: translateX(-100%); }
+    66% { transform: translateX(-200%); }
+    100% { transform: translateX(0); }
+}
+
+.content {
+    padding: 20px;
+    text-align: center;
+}
+
+.social-popup {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.popup-icons {
+    display: flex;
+}
+
+.icon {
+    margin-left: 10px;
+}
+
+.icon img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
