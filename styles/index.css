@@ -1,91 +1,97 @@
 /* Import Montserrat Font */
 body {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #eed9d9;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    padding: 10px 20px;
-    color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 20px;
+  color: white;
 }
 
 .header-left .site-name {
-    font-size: 20px;
-    font-weight: 500;
+  font-size: 20px;
+  font-weight: 500;
 }
 
-.header-right{
-    display: flex;
-    justify-content: center;
-    flex-grow: 1;
-    margin-right: 480px;
+.header-right {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+  margin-right: 480px;
 }
 
 .header-right ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
 
 .header-right ul li {
-    margin-left: 50px;
+  margin-left: 50px;
 }
 
 .header-right ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
 }
 
-
 @keyframes slide {
-    0% { transform: translateX(0); }
-    33% { transform: translateX(-100%); }
-    66% { transform: translateX(-200%); }
-    100% { transform: translateX(0); }
+  0% {
+    transform: translateX(0);
+  }
+  33% {
+    transform: translateX(-100%);
+  }
+  66% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .content {
-    padding: 20px;
-    text-align: center;
+  padding: 20px;
+  text-align: center;
 }
-
 
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    /* position:fixed; */
-    width: 100%;
-    bottom: 0;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  /* position:fixed; */
+  width: 100%;
+  bottom: 0;
 }
 
-section{
-    min-height: 100vh; /* Full height of the viewport */
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 20px;
-      color: #fff;
+section {
+  min-height: 100vh; /* Full height of the viewport */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: #fff;
 }
 
-header img{
-     height: 50px; /* Set the height of the logo */
-        margin-right: 20px; /* Optional: space between logo and header text */
-
+header img {
+  height: 50px; /* Set the height of the logo */
+  margin-right: 20px; /* Optional: space between logo and header text */
 }
 
 /* Home section with full-screen background image */
 .Home {
-  background: url('/Image/Japura.jpg') no-repeat center center/cover; /* Replace with your image */
+  background: url("/Image/Japura.jpg") no-repeat center center/cover; /* Replace with your image */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -101,7 +107,7 @@ header img{
 }
 
 /* Big text styling */
-.Home  h1 {
+.Home h1 {
   font-size: 50px; /* Large text */
   margin-bottom: 20px;
 }
@@ -109,3 +115,38 @@ header img{
 .Home p {
   font-size: 40px; /* Subtext */
 }
+
+.paragraph {
+  height: 50vh;
+  color: #333;
+}
+
+.paragraph-container {
+  background: rgba(46, 39, 39, 0.5); /* Dark transparent overlay */
+  padding: 30px;
+  border-radius: 20px;
+  position: absolute;
+  top: 1050px; /* Distance from the top */
+  left: 50%;
+  transform: translateX(-50%); /* Center horizontally */
+
+}
+
+.paragraph-topic h1 {
+  font-size: 60px; /* Large text */
+  position: absolute;
+  top: 900px; /* Distance from the top */
+  left: 50%;
+  transform: translateX(-50%); /* Center horizontally */
+  color: #191c5c; /* Text color */
+
+}
+
+.paragraph-container p{
+    font-size: 30px;
+    color: #191c5c;
+    text-align: center;
+    justify-content: center;
+}
+
+
